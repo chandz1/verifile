@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 blake3 = "1.8.2"
 iced = { version = "0.13.1", features = ["tokio"] }
+md5 = "0.8.0"
 rfd = "0.15.4"
 sha2 = "0.10.9"
 
