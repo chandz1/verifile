@@ -1,0 +1,32 @@
+[
+  {
+    "id": "228ba7b4-cccb-4240-a083-6d15ee5e1e42",
+    "file_name": "archlinux-2025.11.01-x86_64.iso",
+    "file_path": "C:\\Users\\jagad\\Downloads\\archlinux-2025.11.01-x86_64.iso",
+    "algorithm": "Sha256",
+    "computed_hash": "3fde01031127fb49d3fb489dd92f8d1fc0a7fc4fdfff220936031a00a7673a2e",
+    "reference_hash": "f896aea7f9bce23696a824a79b48dac99c839e400005fa760c74085af8436368a0f04fef8bab7af541d27f1e950a07b3d070204dfb76cdb69a0779beecc00273",
+    "status": "Failed",
+    "timestamp": 1763383231
+  },
+  {
+    "id": "20448a1c-b5dc-4e0b-b732-60883201b845",
+    "file_name": "archlinux-2025.11.01-x86_64.iso",
+    "file_path": "C:\\Users\\jagad\\Downloads\\archlinux-2025.11.01-x86_64.iso",
+    "algorithm": "Blake3",
+    "computed_hash": "beb540edc6c02e81524b315ac1c3b8a818a147f7825f0ff4d84ec760b17a1852",
+    "reference_hash": "f896aea7f9bce23696a824a79b48dac99c839e400005fa760c74085af8436368a0f04fef8bab7af541d27f1e950a07b3d070204dfb76cdb69a0779beecc00273",
+    "status": "Failed",
+    "timestamp": 1763383157
+  },
+  {
+    "id": "ff79ff34-e8c4-4f77-b454-e2a072e98c3f",
+    "file_name": "archlinux-2025.11.01-x86_64.iso",
+    "file_path": "C:\\Users\\jagad\\Downloads\\archlinux-2025.11.01-x86_64.iso",
+    "algorithm": "Sha256",
+    "computed_hash": "3fde01031127fb49d3fb489dd92f8d1fc0a7fc4fdfff220936031a00a7673a2e",
+    "reference_hash": " 3fde01031127fb49d3fb489dd92f8d1fc0a7fc4fdfff220936031a00a7673a2e",
+    "status": "Success",
+    "timestamp": 1763382623
+  }
+]
