@@ -1,5 +1,75 @@
 [
   {
+    "id": "327ef669-477c-4fac-9d13-2f852fb2fcf7",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Md5",
+    "computed_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Success",
+    "timestamp": 1763460510
+  },
+  {
+    "id": "f7e2aeb7-0434-4944-adfa-f0e116828e30",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Blake3",
+    "computed_hash": "eb3d720169e651aa4bafe780f6abfa7b3ffacc12156fbbd0f5f9801e68b3c11d",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Failed",
+    "timestamp": 1763460497
+  },
+  {
+    "id": "abf88e46-a702-4e75-9b58-e5689096d127",
+    "file_name": "Odyssey '26.md",
+    "file_path": "/home/chandz/Documents/Odyssey '26.md",
+    "algorithm": "Sha256",
+    "computed_hash": "0e13eaf8e22166f3bc1a3deaf9c98beb067c92c7502a80fee55b5b8bd891b543",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Failed",
+    "timestamp": 1763460280
+  },
+  {
+    "id": "a99dc25e-c146-4d02-8f1c-1dffbf25ad24",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Md5",
+    "computed_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Success",
+    "timestamp": 1763460273
+  },
+  {
+    "id": "0c2870db-d8f2-496a-a3f8-4fe8a167ac65",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Md5",
+    "computed_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Success",
+    "timestamp": 1763460033
+  },
+  {
+    "id": "54e4cd0c-b804-4655-822a-95e81f7a39ec",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Md5",
+    "computed_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Success",
+    "timestamp": 1763459689
+  },
+  {
+    "id": "e10bd77b-4953-4c98-a47a-835772713e26",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Blake3",
+    "computed_hash": "eb3d720169e651aa4bafe780f6abfa7b3ffacc12156fbbd0f5f9801e68b3c11d",
+    "reference_hash": "c1a2a5ece1b7b38ad020b924c1239592",
+    "status": "Failed",
+    "timestamp": 1763459675
+  },
+  {
     "id": "228ba7b4-cccb-4240-a083-6d15ee5e1e42",
     "file_name": "archlinux-2025.11.01-x86_64.iso",
     "file_path": "C:\\Users\\jagad\\Downloads\\archlinux-2025.11.01-x86_64.iso",
