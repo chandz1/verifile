@@ -1,5 +1,55 @@
 [
   {
+    "id": "166d33e2-8655-4f58-b8b6-937a027990ce",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Sha3_256",
+    "computed_hash": "84525a4f44fa3f9d15c3261d1df9dff0cb7e1a3b5625e86e75247b78386bf422",
+    "reference_hash": "adfadfafafasdfadsffd",
+    "status": "Failed",
+    "timestamp": 1763628939
+  },
+  {
+    "id": "3de714fe-355f-4a43-bf53-c928ba22fd71",
+    "file_name": "Firmware.20.5.0.zip",
+    "file_path": "/home/chandz/Downloads/Firmware.20.5.0.zip",
+    "algorithm": "Blake3",
+    "computed_hash": "10534464c668701aec9c6fa2819377888dc2bf88970379ede811f7e145f5487b",
+    "reference_hash": "<dsfadfafadf",
+    "status": "Failed",
+    "timestamp": 1763628900
+  },
+  {
+    "id": "2a663a6c-b654-42a5-8a62-b03530ca0533",
+    "file_name": "Odyssey '26.md",
+    "file_path": "/home/chandz/Documents/Odyssey '26.md",
+    "algorithm": "Blake3",
+    "computed_hash": "a3114d6ddd0a338866c7b88ffb1d97e9eb929eb2b0efeeb4e2da462a5a1fea5f",
+    "reference_hash": "gfgsgfsg",
+    "status": "Failed",
+    "timestamp": 1763628883
+  },
+  {
+    "id": "46ac673f-6ecd-49a3-9a10-4164c48d866b",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Sha256",
+    "computed_hash": "e292f6face9879644c7678c6681e04af807c34f8f81cebe1c2ebb6001aeececc",
+    "reference_hash": "adsfadfsasdfasdfasf",
+    "status": "Failed",
+    "timestamp": 1763628779
+  },
+  {
+    "id": "08f7995c-e05e-4f8a-833c-89f5c25d119f",
+    "file_name": "citron_0.9.0-linux-x86_64.AppImage",
+    "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",
+    "algorithm": "Sha256",
+    "computed_hash": "e292f6face9879644c7678c6681e04af807c34f8f81cebe1c2ebb6001aeececc",
+    "reference_hash": "asdfadfadfasdfaf",
+    "status": "Failed",
+    "timestamp": 1763628736
+  },
+  {
     "id": "327ef669-477c-4fac-9d13-2f852fb2fcf7",
     "file_name": "citron_0.9.0-linux-x86_64.AppImage",
     "file_path": "/home/chandz/Downloads/citron_0.9.0-linux-x86_64.AppImage",

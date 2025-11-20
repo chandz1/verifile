@@ -284,8 +284,8 @@ impl VeriFileApp {
 
         let theme_btn = Button::new(
             Text::new(match self.theme {
-                Theme::Light => "🌙 Dark Mode",
-                Theme::Dark => "☀️ Light Mode",
+                Theme::Light => "Dark Mode",
+                Theme::Dark => "Light Mode",
             })
                 .size(14)
         )
@@ -327,12 +327,7 @@ impl VeriFileApp {
 
             let mut history_list = Column::new().spacing(8);
             for (i, r) in self.past.iter().take(5).enumerate() {
-                let status_icon = match r.status {
-                    VerificationStatus::Success => "✓",
-                    VerificationStatus::Failed => "✗",
-                    VerificationStatus::InProgress => "⋯",
-                };
-                let status_color = match r.status {
+                let file_text_color = match r.status {
                     VerificationStatus::Success => Color::from_rgb(0.2, 0.8, 0.2),
                     VerificationStatus::Failed => Color::from_rgb(0.9, 0.2, 0.2),
                     VerificationStatus::InProgress => Color::from_rgb(0.7, 0.7, 0.7),
@@ -341,17 +336,13 @@ impl VeriFileApp {
                 let history_item = Column::new()
                     .spacing(4)
                     .push(
-                        Row::new()
-                            .spacing(5)
-                            .push(
-                                Text::new(status_icon)
-                                    .style(move |_theme| {
-                                        iced::widget::text::Style {
-                                            color: Some(status_color),
-                                        }
-                                    })
-                            )
-                            .push(Text::new(&r.file_name).size(12))
+                        Text::new(&r.file_name)
+                            .size(12)
+                            .style(move |_theme| {
+                                iced::widget::text::Style {
+                                    color: Some(file_text_color),
+                                }
+                            })
                     )
                     .push(
                         Text::new(r.timestamp.format("%m/%d %H:%M").to_string())
@@ -474,7 +465,7 @@ impl VeriFileApp {
 
         let next_btn = if self.chosen_file.is_some() {
             Button::new(
-                Text::new("Next: Upload Hash →")
+                Text::new("Next: Upload Hash >")
                     .size(16)
             )
             .on_press(Message::ProceedToHash)
@@ -482,7 +473,7 @@ impl VeriFileApp {
             .width(Length::Fixed(200.0))
         } else {
             Button::new(
-                Text::new("Next: Upload Hash →")
+                Text::new("Next: Upload Hash >")
                     .size(16)
             )
             .padding(15)
@@ -542,7 +533,7 @@ impl VeriFileApp {
         .width(Length::Fill);
 
         let load_file_btn = Button::new(
-            Text::new("📁 Load Hash from File")
+            Text::new("Load Hash from File")
                 .size(14)
         )
         .on_press(Message::LoadHashFile)
@@ -562,7 +553,7 @@ impl VeriFileApp {
             });
 
         let back_btn = Button::new(
-            Text::new("← Back")
+            Text::new("< Back")
                 .size(16)
         )
         .on_press(Message::ResetVerification)
@@ -626,7 +617,7 @@ impl VeriFileApp {
                 }
             });
 
-        let spinner = Text::new("⟳")
+        let spinner = Text::new("...")
             .size(64)
             .style(move |_theme| {
                 iced::widget::text::Style {
@@ -655,35 +646,24 @@ impl VeriFileApp {
     fn view_result(&self) -> Element<'_, Message> {
         let step_indicator = self.step_indicator(3);
 
-        let (title, title_color, icon) = if let Some(rec) = &self.last_result {
+        let (title, title_color) = if let Some(rec) = &self.last_result {
             match rec.status {
                 VerificationStatus::Success => (
                     "Verification Successful!",
                     Color::from_rgb(0.2, 0.7, 0.2),
-                    "✓"
                 ),
                 VerificationStatus::Failed => (
                     "Verification Failed",
                     Color::from_rgb(0.9, 0.2, 0.2),
-                    "✗"
                 ),
                 VerificationStatus::InProgress => (
                     "In Progress",
                     Color::from_rgb(0.5, 0.5, 0.5),
-                    "⋯"
                 ),
             }
         } else {
-            ("Error", Color::from_rgb(0.9, 0.2, 0.2), "✗")
+            ("Error", Color::from_rgb(0.9, 0.2, 0.2))
         };
-
-        let icon_text = Text::new(icon)
-            .size(80)
-            .style(move |_theme| {
-                iced::widget::text::Style {
-                    color: Some(title_color),
-                }
-            });
 
         let title_text = Text::new(title)
             .size(36)
@@ -811,7 +791,6 @@ impl VeriFileApp {
             .width(Length::Fill)
             .align_x(Alignment::Center)
             .push(step_indicator)
-            .push(icon_text)
             .push(title_text)
             .push(Space::with_height(20))
             .push(details)
@@ -854,7 +833,7 @@ impl VeriFileApp {
                 }
             });
 
-        let arrow1 = Text::new("→")
+        let arrow1 = Text::new(">")
             .size(14)
             .style(|_theme| {
                 iced::widget::text::Style {
@@ -862,7 +841,7 @@ impl VeriFileApp {
                 }
             });
 
-        let arrow2 = Text::new("→")
+        let arrow2 = Text::new(">")
             .size(14)
             .style(|_theme| {
                 iced::widget::text::Style {
